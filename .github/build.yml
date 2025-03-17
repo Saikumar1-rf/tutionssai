@@ -3,10 +3,10 @@ name: Build and Test
 on:
   push:
     branches:
-      - main  # Runs the workflow when pushing to the main branch
+      - main 
   pull_request:
     branches:
-      - main  # Runs the workflow for pull requests to main
+      - main 
 
 jobs:
   build:
