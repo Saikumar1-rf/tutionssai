@@ -161,72 +161,22 @@
 // console.log("Parsed Object:", parsedUsers);
 
 
-// import React from 'react';
-// import Home from './Components/Home';
+import React from "react";
+import Home from "./Components/Home";
 
-// const App = (props) => {
-//   let list = [
-//     {
-//       name: 'saikumar',
-//       age: 23,
-//     },
-//     {
-//       name: 'sai',
-//       age: 23,
-//     },
-//     {
-//       name: 'sai',
-//       age: 23,
-//     },
-//   ];
-
-//   return (
-//     <div>
-//       <Home list={list} />
-//     </div>
-//   );
-// };
-
-// export default App;
-
-// import React from 'react';
-// import Home from './Components/Home'
-
-// const App = () => {
-//   const data = {
-//     message: 'Hello from App!',
-//   };
-
-//   return (
-//     <div>
-//       <Home data={data} />
-//     </div>
-//   );
-// };
-
-// export default App;
-
-
-import React, { useState } from "react";
-
-const ArrayExample = () => {
-  const [items, setItems] = useState(["Apple", "Banana", "Orange"]);
-
-  const addItem = () => {
-    setItems([...items, "Grapes"]);
-  };
+const App = () => {
+  const list = [
+    { name: "Saikumar", age: 23 },
+    { name: "Sai", age: 23 },
+    { name: "Krishna", age: 25 },
+  ];
 
   return (
-    <div>
-      <h2>Fruits List</h2>
-      <ul>
-        {items.map((item, index) => (
-          <li key={index}>{item}</li>
-        ))}
-      </ul>
-      <button onClick={addItem}>Add Grapes</button>
+    <div style={{ padding: "20px" }}>
+      <h2>Users List</h2>
+      <Home list={list} />
     </div>
   );
 };
 
-export default ArrayExample;
+export default App;

@@ -97,16 +97,3 @@
 // export default About;
 
 
-// Child2.js
-import React from 'react';
-
-const About = ({ message }) => {
-  return (
-    <div>
-      <h3>Child 2</h3>
-      <p>{message}</p>
-    </div>
-  );
-};
-
-export default About;

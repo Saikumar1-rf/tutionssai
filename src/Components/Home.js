@@ -98,36 +98,19 @@
 // export default Home
 
 
-// import React from "react";
+import React from "react";
 
-// const Home=({list})=>{
-//   return(
-//     <div>
-//         {
-//           list.map((item,index)=>(
-//             <div key={index}>
-//                 <p>name:{item.name}</p>
-//                 <p>age:{item.age}</p>
-//             </div>
-//           ))
-//         }
-//     </div>
-//   )
-// }
-
-// export default Home;
-
-import React from 'react';
-import About from './About';
-
-const Child1 = ({ data }) => {
+const Home = ({ list }) => {
   return (
     <div>
-      <h2>Child 1</h2>
-      <p>{data.message}</p>
-      <About message={data.message} />
+      {list.map((item, index) => (
+        <div key={index} style={{ border: "1px solid #ccc", padding: "10px", margin: "10px 0" }}>
+          <p><strong>Name:</strong> {item.name}</p>
+          <p><strong>Age:</strong> {item.age}</p>
+        </div>
+      ))}
     </div>
   );
 };
 
-export default Child1;
+export default Home;
