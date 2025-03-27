@@ -161,22 +161,74 @@
 // console.log("Parsed Object:", parsedUsers);
 
 
-import React from "react";
-import Home from "./Components/Home";
+// import React from "react";
+// import Home from "./Components/Home";
+
+// const App = () => {
+//   const list = [
+//     { name: "Saikumar", age: 23 },
+//     { name: "Sai", age: 23 },
+//     { name: "Krishna", age: 25 },
+//   ];
+
+//   return (
+//     <div style={{ padding: "20px" }}>
+//       <h2>Users List</h2>
+//       <Home list={list} />
+//     </div>
+//   );
+// };
+
+// export default App;
+
+
+// import React from 'react'
+// import About from "./Components/About";
+
+// const App = () => {
+//   return (
+//     <div>
+//       <About/>
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+// import React, { createContext } from 'react';
+// import Home from "./Components/Home";
+
+// export const Context = createContext();  // ✅ Export the context
+
+// const App = () => {
+//   const list = [
+//     {
+//       "firstname": "saikumar",
+//       "lastname": "kumar"
+//     }
+//   ];
+
+//   return (
+//     <div>
+//       <Context.Provider value={list}>  {/* Use the exported Context */}
+//         <Home />
+//       </Context.Provider>
+//     </div>
+//   );
+// }
+
+// export default App;
+
+
+import React from 'react'
 
 const App = () => {
-  const list = [
-    { name: "Saikumar", age: 23 },
-    { name: "Sai", age: 23 },
-    { name: "Krishna", age: 25 },
-  ];
-
   return (
-    <div style={{ padding: "20px" }}>
-      <h2>Users List</h2>
-      <Home list={list} />
-    </div>
-  );
-};
+    <div>App</div>
+  )
+}
 
-export default App;
+export default App
+
+
