@@ -182,43 +182,43 @@
 // export default App;
 
 
-import React from 'react'
-import About from "./Components/About";
-
-const App = () => {
-  return (
-    <div>
-      <About/>
-    </div>
-  )
-}
-
-export default App
-
-
-// import React, { createContext } from 'react';
-// import Home from "./Components/Home";
-
-// export const Context = createContext();  // ✅ Export the context
+// import React from 'react'
+// import About from "./Components/About";
 
 // const App = () => {
-//   const list = [
-//     {
-//       "firstname": "saikumar",
-//       "lastname": "kumar"
-//     }
-//   ];
-
 //   return (
 //     <div>
-//       <Context.Provider value={list}>  {/* Use the exported Context */}
-//         <Home />
-//       </Context.Provider>
+//       <About/>
 //     </div>
-//   );
+//   )
 // }
 
-// export default App;
+// export default App
+
+
+import React, { createContext } from 'react';
+import Home from "./Components/Home";
+
+export const Context = createContext();  // ✅ Export the context
+
+const App = () => {
+  const list = [
+    {
+      "firstname": "saikumar",
+      "lastname": "kumar"
+    }
+  ];
+
+  return (
+    <div>
+      <Context.Provider value={list}>  {/* Use the exported Context */}
+        <Home />
+      </Context.Provider>
+    </div>
+  );
+}
+
+export default App;
 
 
 // import React from 'react'
