@@ -196,39 +196,41 @@
 // export default App
 
 
-import React, { createContext } from 'react';
-import Home from "./Components/Home";
+// import React, { createContext } from 'react';
+// import Home from "./Components/Home";
 
-export const Context = createContext();  // ✅ Export the context
-
-const App = () => {
-  const list = [
-    {
-      "firstname": "saikumar",
-      "lastname": "kumar"
-    }
-  ];
-
-  return (
-    <div>
-      <Context.Provider value={list}>  {/* Use the exported Context */}
-        <Home />
-      </Context.Provider>
-    </div>
-  );
-}
-
-export default App;
-
-
-// import React from 'react'
+// export const Context = createContext();  // ✅ Export the context
 
 // const App = () => {
+//   const list = [
+//     {
+//       "firstname": "saikumar",
+//       "lastname": "kumar"
+//     }
+//   ];
+
 //   return (
-//     <div>App</div>
-//   )
+//     <div>
+//       <Context.Provider value={list}>  {/* Use the exported Context */}
+//         <Home />
+//       </Context.Provider>
+//       gh pr create --base main --head add-login-functionality --title "Added login feature" --body "Implemented login functionality with validations."
+
+//     </div>
+//   );
 // }
 
-// export default App
+// export default App;
+
+
+import React from 'react'
+
+const App = () => {
+  return (
+    <div>App</div>
+  )
+}
+
+export default App
 
 
